@@ -1,37 +1,27 @@
 {
-  "name": "pillO — Your health buddy",
-  "short_name": "pillO",
-  "description": "I'm here to keep you healthy. The smart companion that makes sure you never miss a dose.",
-  "start_url": "/pillo-app/pillo-v3-complete.html",
-  "scope": "/pillo-app/",
+  "name": "PILLHOY — Medication Companion",
+  "short_name": "PILLHOY",
+  "description": "Your intelligent medication companion. Never miss a dose again.",
+  "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait",
   "background_color": "#080F1E",
   "theme_color": "#080F1E",
-  "categories": ["health", "medical", "lifestyle"],
+  "orientation": "portrait",
+  "scope": "/",
   "lang": "en",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ],
-  "screenshots": [],
-  "shortcuts": [
-    {
-      "name": "Today's doses",
-      "short_name": "Today",
-      "description": "See today's medication schedule",
-      "url": "/pillo-app/pillo-v3-complete.html",
-      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
-    }
-  ]
+  "categories": ["health", "medical", "lifestyle"]
 }
