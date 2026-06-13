@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#080F1E">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="pillO">
+<meta name="apple-mobile-web-app-title" content="PILLHOY">
 <title>PILLHOY — I'm here to keep you healthy.</title>
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-192.png">
@@ -271,6 +271,116 @@ select.form-i{appearance:none;}
 </style>
 </head>
 <body>
+
+<!-- LANDING PAGE -->
+<div class="screen" id="s-landing">
+  <div style="flex:1;display:flex;flex-direction:column;overflow-y:auto;background:var(--bg);">
+    <!-- Hero -->
+    <div style="background:linear-gradient(180deg,#0A1628 0%,#080F1E 100%);padding:60px 28px 40px;text-align:center;position:relative;overflow:hidden;">
+      <div style="position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:400px;height:400px;background:rgba(62,207,170,.06);border-radius:50%;filter:blur(60px);pointer-events:none;"></div>
+      <!-- Mascot mini -->
+      <div style="display:flex;justify-content:center;margin-bottom:20px;">
+        <svg width="90" height="106" viewBox="0 0 110 130" fill="none" style="filter:drop-shadow(0 8px 32px rgba(62,207,170,.3));">
+          <rect x="15" y="30" width="80" height="75" rx="22" fill="url(#lpb2)"/>
+          <rect x="20" y="32" width="70" height="28" rx="15" fill="white" opacity=".1"/>
+          <rect x="24" y="42" width="62" height="46" rx="14" fill="#061828"/>
+          <ellipse cx="38" cy="63" rx="9.5" ry="9.5" fill="url(#lpe2)"/>
+          <ellipse cx="34" cy="59" rx="3.5" ry="2.8" fill="white" opacity=".9"/>
+          <ellipse cx="72" cy="63" rx="9.5" ry="9.5" fill="url(#lpe2)"/>
+          <ellipse cx="68" cy="59" rx="3.5" ry="2.8" fill="white" opacity=".9"/>
+          <path d="M30 76 Q55 90 80 76" stroke="#3ECFAA" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <ellipse cx="24" cy="74" rx="7" ry="4" fill="#FF8AAE" opacity=".2"/>
+          <ellipse cx="86" cy="74" rx="7" ry="4" fill="#FF8AAE" opacity=".2"/>
+          <rect x="49" y="8" width="12" height="24" rx="5" fill="#2E5BA8"/>
+          <circle cx="55" cy="7" r="8.5" fill="#3ECFAA"/>
+          <rect x="-4" y="45" width="20" height="12" rx="6" fill="#3ECFAA" transform="rotate(-30 8 51)"/>
+          <rect x="94" y="45" width="20" height="12" rx="6" fill="#2BA882" transform="rotate(30 104 51)"/>
+          <rect x="27" y="100" width="20" height="26" rx="9" fill="#2E5BA8"/>
+          <rect x="63" y="100" width="20" height="26" rx="9" fill="#1A3560"/>
+          <defs>
+            <linearGradient id="lpb2" x1="15" y1="30" x2="95" y2="105" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#1E4A7A"/><stop offset="100%" stop-color="#071828"/></linearGradient>
+            <radialGradient id="lpe2" cx="37%" cy="33%"><stop offset="0%" stop-color="#80FFE8"/><stop offset="55%" stop-color="#3ECFAA"/><stop offset="100%" stop-color="#1A8060"/></radialGradient>
+          </defs>
+        </svg>
+      </div>
+      <div style="font-size:48px;font-weight:900;letter-spacing:-2px;margin-bottom:8px;">PILLHOY</div>
+      <div style="font-size:16px;color:var(--muted);font-style:italic;margin-bottom:28px;">"I'm here to keep you healthy."</div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <button onclick="ss('login')" style="width:100%;padding:18px;background:var(--green);color:#04160F;border-radius:18px;font-size:18px;font-weight:900;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;">
+          Get Started — It's Free
+        </button>
+        <button onclick="ss('login')" style="width:100%;padding:15px;background:transparent;color:var(--muted);border-radius:18px;font-size:15px;font-weight:600;border:1px solid var(--border);cursor:pointer;font-family:'DM Sans',sans-serif;">
+          Sign in
+        </button>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div style="padding:32px 24px;">
+      <!-- Feature 1 -->
+      <div style="display:flex;align-items:flex-start;gap:16px;margin-bottom:28px;">
+        <div style="width:52px;height:52px;border-radius:16px;background:rgba(62,207,170,.1);border:1px solid rgba(62,207,170,.2);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;">🤖</div>
+        <div>
+          <div style="font-size:17px;font-weight:700;margin-bottom:4px;">Your Intelligent Health Companion</div>
+          <div style="font-size:14px;color:var(--muted);line-height:1.6;">PILLHOY celebrates when you take your meds on time and gets worried when you miss a dose. A companion that actually cares.</div>
+        </div>
+      </div>
+      <!-- Feature 2 -->
+      <div style="display:flex;align-items:flex-start;gap:16px;margin-bottom:28px;">
+        <div style="width:52px;height:52px;border-radius:16px;background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.2);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;">🔥</div>
+        <div>
+          <div style="font-size:17px;font-weight:700;margin-bottom:4px;">Gamified Streaks & XP</div>
+          <div style="font-size:14px;color:var(--muted);line-height:1.6;">Earn XP for every dose taken on time. Build streaks. Level up PILLHOY. Make your health routine the most rewarding habit you have.</div>
+        </div>
+      </div>
+      <!-- Feature 3 -->
+      <div style="display:flex;align-items:flex-start;gap:16px;margin-bottom:28px;">
+        <div style="width:52px;height:52px;border-radius:16px;background:rgba(139,111,212,.1);border:1px solid rgba(139,111,212,.2);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;">💊</div>
+        <div>
+          <div style="font-size:17px;font-weight:700;margin-bottom:4px;">Smart Medication Tracking</div>
+          <div style="font-size:14px;color:var(--muted);line-height:1.6;">Track any medication with dose, lab, frequency and schedule. 30-day adherence calendar. Reminders 15 min before and on time.</div>
+        </div>
+      </div>
+      <!-- Feature 4 -->
+      <div style="display:flex;align-items:flex-start;gap:16px;margin-bottom:32px;">
+        <div style="width:52px;height:52px;border-radius:16px;background:rgba(74,144,217,.1);border:1px solid rgba(74,144,217,.2);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;">🏪</div>
+        <div>
+          <div style="font-size:17px;font-weight:700;margin-bottom:4px;">Pharmacy Marketplace</div>
+          <div style="font-size:14px;color:var(--muted);line-height:1.6;">Never run out of medication. PILLHOY connects you with Amazon Pharmacy, GoodRx, CVS and Walgreens for the best prices.</div>
+        </div>
+      </div>
+
+      <!-- Social proof -->
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:22px;padding:22px;margin-bottom:28px;text-align:center;">
+        <div style="font-size:36px;font-weight:900;color:var(--green);letter-spacing:-1px;">50%</div>
+        <div style="font-size:14px;color:var(--muted);margin-top:4px;line-height:1.6;">of patients with chronic conditions don't take their medication as prescribed. PILLHOY is changing that.</div>
+      </div>
+
+      <!-- Privacy -->
+      <div style="display:flex;align-items:flex-start;gap:10px;background:rgba(62,207,170,.04);border:1px solid rgba(62,207,170,.1);border-radius:16px;padding:16px;margin-bottom:28px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:1px"><path d="M12 3L19 6.5V13C19 17 16 20.5 12 21C8 20.5 5 17 5 13V6.5L12 3Z" fill="#0A2E25" stroke="#3ECFAA" stroke-width="1.5"/></svg>
+        <div style="font-size:13px;color:var(--muted);line-height:1.6;"><strong style="color:var(--green);">Your data is safe.</strong> GDPR & CCPA compliant. Encrypted end-to-end. Never sold. No ads. Ever.</div>
+      </div>
+
+      <!-- CTA bottom -->
+      <button onclick="ss('login')" style="width:100%;padding:18px;background:var(--green);color:#04160F;border-radius:18px;font-size:18px;font-weight:900;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;margin-bottom:16px;">
+        Start Free — No Credit Card
+      </button>
+      <div style="text-align:center;font-size:12px;color:var(--faint);">Available on Android · iOS coming soon · pillhoy.com</div>
+    </div>
+
+    <!-- Footer -->
+    <div style="padding:20px 24px 40px;text-align:center;border-top:1px solid var(--border);">
+      <div style="font-size:20px;font-weight:900;color:var(--green);margin-bottom:8px;">PILLHOY</div>
+      <div style="font-size:12px;color:var(--faint);line-height:1.8;">
+        <a href="privacy-policy.html" style="color:var(--faint);">Privacy Policy</a> · 
+        <a href="delete-account.html" style="color:var(--faint);">Delete Account</a> · 
+        <a href="mailto:jorgea.kamell@gmail.com" style="color:var(--faint);">Contact</a>
+      </div>
+      <div style="font-size:11px;color:var(--faint);margin-top:8px;">© 2026 Kamell Labs · Barranquilla, Colombia</div>
+    </div>
+  </div>
+</div>
 <!-- SPLASH -->
 <div class="screen" id="s-splash">
   <div class="sp-glow"></div>
@@ -795,7 +905,7 @@ select.form-i{appearance:none;}
           <div class="srow" onclick="exportCSV()"><div class="srow-l">Export history</div><div class="srow-r">CSV</div></div>
           <div class="srow" onclick="doSignOut()"><div class="srow-l" style="color:var(--red)">Sign out</div><div class="srow-r">→</div></div>
         </div>
-        <div style="text-align:center;padding:16px 0;font-size:11px;color:var(--faint);font-style:italic;">"I'm here to keep you healthy." · PILLHOY v2.0</div>
+        <div style="text-align:center;padding:16px 0;font-size:11px;color:var(--faint);font-style:italic;">"I'm here to keep you healthy." · PILLHOY v2.1</div>
       </div>
     </div>
   </div>
@@ -907,10 +1017,10 @@ window.addEventListener('load',()=>{
     setTimeout(()=>{document.getElementById('sp-slogan').classList.add('show');playBrandSound();},600);
   },200);
   let routed=false;
-  const st=setTimeout(()=>{if(!routed){routed=true;ss('login');}},2600);
+  const st=setTimeout(()=>{if(!routed){routed=true;ss('landing');}},2600);
   auth.onAuthStateChanged(user=>{
     if(!routed){routed=true;clearTimeout(st);
-      if(user){CU=user;checkAndRoute();}else setTimeout(()=>ss('login'),2500);
+      if(user){CU=user;checkAndRoute();}else setTimeout(()=>ss('landing'),2500);
     }else if(user&&!CU){CU=user;checkAndRoute();}
   });
 });
@@ -922,7 +1032,7 @@ async function checkAndRoute(){
       Object.assign(profile,doc.data().profile||{});
       Object.assign(settings,doc.data().settings||{});
       xp=doc.data().xp||0;level=doc.data().level||1;streak=doc.data().streak||0;
-      await loadData();initApp();
+      await loadDataWithFallback();initApp();
     }else{ss('profile');}
   }catch(e){ss('profile');}
 }
@@ -1422,6 +1532,124 @@ function renderPharmacyRefills(){
   if(!html)html=`<div style="background:var(--bg2);border:1px solid var(--border);border-radius:18px;padding:18px 20px;margin-bottom:10px;"><div style="font-size:16px;font-weight:700;margin-bottom:4px;">All medications stocked ✓</div><div style="font-size:13px;color:var(--muted);">No refills needed right now</div></div>`;
   list.innerHTML=html;
 }
+
+
+// ════════════════════════════════════════
+// OFFLINE MODE — Local Storage Cache
+// ════════════════════════════════════════
+let isOnline = navigator.onLine;
+
+window.addEventListener('online', () => {
+  isOnline = true;
+  syncOfflineQueue();
+  showOfflineBar(false);
+  toast('Back online — syncing... ✓');
+});
+
+window.addEventListener('offline', () => {
+  isOnline = false;
+  showOfflineBar(true);
+  toast('You're offline — pillO keeps working 💪');
+});
+
+function showOfflineBar(show) {
+  let bar = document.getElementById('offline-bar');
+  if (!bar) {
+    bar = document.createElement('div');
+    bar.id = 'offline-bar';
+    bar.style.cssText = 'position:fixed;top:0;left:0;right:0;max-width:430px;margin:0 auto;background:#F5A623;color:#04160F;text-align:center;padding:8px;font-size:13px;font-weight:700;z-index:999;transition:transform .3s;transform:translateY(-100%);';
+    bar.textContent = '⚡ Offline mode — your data is saved locally';
+    document.body.appendChild(bar);
+  }
+  bar.style.transform = show ? 'translateY(0)' : 'translateY(-100%)';
+}
+
+// LOCAL STORAGE HELPERS
+function saveLocal(key, data) {
+  try { localStorage.setItem('ph_' + key, JSON.stringify(data)); } catch(e) {}
+}
+
+function loadLocal(key) {
+  try { const d = localStorage.getItem('ph_' + key); return d ? JSON.parse(d) : null; } catch(e) { return null; }
+}
+
+// OFFLINE QUEUE — actions taken offline
+let offlineQueue = loadLocal('queue') || [];
+
+function queueAction(action) {
+  offlineQueue.push({ ...action, ts: Date.now() });
+  saveLocal('queue', offlineQueue);
+}
+
+async function syncOfflineQueue() {
+  if (!offlineQueue.length || !CU) return;
+  const pending = [...offlineQueue];
+  offlineQueue = [];
+  saveLocal('queue', []);
+  for (const action of pending) {
+    try {
+      if (action.type === 'log') await saveLogDb(action.data);
+      if (action.type === 'med') await saveMedDb(action.data);
+      if (action.type === 'stats') await saveStats();
+    } catch(e) { offlineQueue.push(action); }
+  }
+  if (offlineQueue.length) saveLocal('queue', offlineQueue);
+  else { renderToday(); toast('All data synced ✓'); }
+}
+
+// OVERRIDE saveLogDb to work offline
+const _origSaveLog = saveLogDb;
+async function saveLogDb(l) {
+  saveLocal('logs', logs); // always save locally
+  if (!isOnline) { queueAction({ type: 'log', data: l }); return; }
+  return _origSaveLog(l);
+}
+
+// OVERRIDE saveMedDb to work offline
+const _origSaveMed = saveMedDb;
+async function saveMedDb(m) {
+  saveLocal('meds', meds); // always save locally
+  if (!isOnline) { queueAction({ type: 'med', data: m }); return; }
+  return _origSaveMed(m);
+}
+
+// OVERRIDE saveStats to work offline
+const _origSaveStats = saveStats;
+async function saveStats() {
+  saveLocal('stats', { xp, level, streak, todayXP, settings });
+  if (!isOnline) { queueAction({ type: 'stats' }); return; }
+  return _origSaveStats();
+}
+
+// LOAD FROM LOCAL CACHE if offline or Firebase fails
+async function loadDataWithFallback() {
+  try {
+    await loadData();
+    // Save to local cache after successful load
+    saveLocal('meds', meds);
+    saveLocal('logs', logs);
+  } catch(e) {
+    // Load from local cache
+    const cachedMeds = loadLocal('meds');
+    const cachedLogs = loadLocal('logs');
+    const cachedStats = loadLocal('stats');
+    if (cachedMeds) meds = cachedMeds;
+    if (cachedLogs) logs = cachedLogs;
+    if (cachedStats) {
+      xp = cachedStats.xp || 0;
+      level = cachedStats.level || 1;
+      streak = cachedStats.streak || 0;
+      todayXP = cachedStats.todayXP || 0;
+      Object.assign(settings, cachedStats.settings || {});
+    }
+    if (cachedMeds || cachedLogs) {
+      toast('Loaded from offline cache');
+    }
+  }
+}
+
+// Show offline bar if already offline on load
+if (!navigator.onLine) showOfflineBar(true);
 
 // SW
 if('serviceWorker'in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('service-worker.js').catch(()=>{}));}
